@@ -1,4 +1,6 @@
-## Welcome to GitHub Pages
+## Me2B Identity Tech PoC
+
+- [Open the wiki](./wiki.html)
 
 You can use the [editor on GitHub](https://github.com/korsimoro/me2b-poc/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
