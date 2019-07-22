@@ -1,9 +1,10 @@
 
 Need to combine several ontologies here
-	- KISIA ontology
-	- KISIA/Kumu/DigLife proposal
-	- Me2B
-	- common JSON-LD (schema.org, etc.)
+
+- KISIA ontology
+- KISIA/Kumu/DigLife proposal
+- Me2B
+- common JSON-LD (schema.org, etc.)
 
 Here is the Me2B Proposed ontology:
 ```

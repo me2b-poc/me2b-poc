@@ -26,15 +26,18 @@
   - be able to track **who** made what changes
   - provide a barrier to **spam** and **bot** edits
 
-
 2. _The wiki will not be associated with the Me2B Alliance website--it will be made available as a freestanding public resource. (Me2B will provide the domain.)_
 
   This is well supported by github pages.
-
 3. _Wiki must have admin/content editor capabilities._
 
   This is achieved using standard open-source access patterns,
-  where the owner of a repository has ultimate control and where other participants have different levels of control as specified by the owner.  Because of the public nature of a the repository, anyone can make a copy and become the owner of their own instance of the repository - but the **official** copy, which is bound to the domain in #2 above, always has a point of primary control.
+  where the owner of a repository has ultimate control and where
+  other participants have different levels of control as specified by
+  the owner.  Because of the public nature of a the repository, anyone 
+  can make a copy and become the owner of their own instance of the
+  repository - but the **official** copy, which is bound to the domain
+  in #2 above, always has a point of primary control.
 
 4. _The wiki must have an intuitive graph-based UI._
 
