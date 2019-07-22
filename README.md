@@ -1,7 +1,7 @@
 # Me2B Identity Tech PoC
 
 - [Open the original wiki](./wiki.html)
-- [Open the rebuilt wiki](./test/output/index.html)
+- [Open the rebuilt wiki](./wiki2.html)
 - [Ontology](./ontology.html)
 
 You can use the [editor on GitHub](https://github.com/korsimoro/me2b-poc/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
