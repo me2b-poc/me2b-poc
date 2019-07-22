@@ -1,0 +1,27 @@
+{
+  "name": "me2b-poc",
+  "preferGlobal": "true",
+  "version": "0.0.1",
+  "author": "Eric Welton (Korsimoro) <eric@korsimoro.com>",
+  "description": "Me2B Proof of Concept",
+  "contributors": [],
+  "bin": {},
+  "main": "./main.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/korsimoro/me2b-poc.git"
+  },
+  "keywords": [
+    "tiddlywiki",
+    "tiddlywiki5",
+    "wiki"
+  ],
+  "dependencies": {
+    "tiddlywiki": "^5.1.19"
+  },
+  "devDependencies": {},
+  "bundleDependencies": [],
+  "engines": {
+    "node": ">=11.0.0"
+  }
+}
