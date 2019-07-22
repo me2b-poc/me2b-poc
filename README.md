@@ -1,14 +1,26 @@
 # Me2B Identity Tech PoC
 
-  - [Open the original wiki](./wiki.html)
-  - [Open the rebuilt wiki](./wiki2.html)
-  - [Prose.io](https://prose.io/#me2b-poc/me2b-poc/tree/master/test/tiddlers)
-  - [Ontology](./ontology.html)
-  - [Raw Tiddlers](https://github.com/korsimoro/me2b-poc/tree/master/test/tiddlers)
-  - You can use the [editor on GitHub](https://github.com/me2b-poc/me2b-poc/edit/master/README.md) to maintain this file
-  - [Proposal](./proposal.html)
-  - [Requirements](./requirements.html)
-  - [Markdown Tutorial](./markdown.html)
+- [Open the original wiki](./wiki.html)
+- [Open the rebuilt wiki](./wiki2.html)
+- [Prose.io](https://prose.io/#me2b-poc/me2b-poc/tree/master/test/tiddlers)
+
+	prose.io is an option and recommended by some in the TiddlyWiki community,
+	such as https://github.com/danielo515/TW5-auto-publish2gh-pages - however,
+	the Authentication configuration relative to a github account is a bit
+	generous and it is possible, but only if a dedicated account is used.  It is
+	not included in this PoC because there is no way to authorize prose.io to
+	access "a specific public repository", only to grant it "100% access to all
+	of my personal and private github information."
+
+
+- [Ontology](./ontology.html)
+- [Raw Tiddlers](https://github.com/me2b-poc/me2b-poc/tree/master/test/tiddlers)
+- You can use the [editor on GitHub](https://github.com/me2b-poc/me2b-poc/edit/master/README.md) to maintain this file
+- [Proposal](./proposal.html)
+- [Requirements](./requirements.html)
+- [Markdown Tutorial](./markdown.html)
+
+
 
 ## Whenever you commit to this repository
 
@@ -24,21 +36,15 @@
 - https://tiddlywiki.com/talkytalky/
 
 
-
 # Design Considerations
 
 - minimize 'devops' and technical development
 
 ### Budget
 
-Using off the shelf components, with minimal
+Using off the shelf components, with minimal operations investment.
 
 
-### Background
-
-https://stackshare.io/stackups/bitbucket-vs-github-vs-gitlab
-
-git itself is hosted on kernel.org - not gitlab, github, or bitbucket
 
 ## Theory of operation
 
@@ -47,7 +53,13 @@ git itself is hosted on kernel.org - not gitlab, github, or bitbucket
 TiddlyWiki was developed as a "personal wiki"
 
 
-## Requirements
+### Background
+
+https://stackshare.io/stackups/bitbucket-vs-github-vs-gitlab
+
+git itself is hosted on kernel.org - not gitlab, github, or bitbucket
+
+## Maintenance Requirements
 
 The exact requirements for operations and maintenance can not be fully
 specified as they depend on further investigation.  However, the costs
@@ -66,17 +78,5 @@ See the discussion of prose.io below.
 ### $10-$50/mo - A server of some sort
 
 
-
-
-# Other Tools
-
-## Prose
-prose.io is an option and recommended by some in the TiddlyWiki community,
-such as https://github.com/danielo515/TW5-auto-publish2gh-pages - however,
-the Authentication configuration relative to a github account is a bit
-generous and it is possible, but only if a dedicated account is used.  It is
-not included in this PoC because there is no way to authorize prose.io to
-access "a specific public repository", only to grant it "100% access to all
-of my personal and private github information."
 
 
