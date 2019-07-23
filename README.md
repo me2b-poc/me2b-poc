@@ -3,7 +3,9 @@
 - [Open the original wiki](./wiki-original.html)
 - [Open the rebuilt wiki](./wiki.html)
 - [Circle CI](https://circleci.com/gh/me2b-poc/workflows/me2b-poc)
-- [Prose.io](https://prose.io/#me2b-poc/me2b-poc/tree/master/test/tiddlers)
+- _Prose.io_
+	- [Organizations](https://prose.io/#me2b-poc/me2b-poc/tree/master/wiki/tiddlers/organizations)
+	- [About](https://prose.io/#me2b-poc/me2b-poc/tree/master/wiki/tiddlers/about)
 
 	prose.io is an option and recommended by some in the TiddlyWiki community,
 	such as https://github.com/danielo515/TW5-auto-publish2gh-pages - however,
