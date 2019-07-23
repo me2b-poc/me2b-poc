@@ -47,6 +47,7 @@ jobs:
             git add wiki.html
             git commit -a -m "Updating Wiki [ci skip]"
             git push origin master
+            true
 
       - run:
           name: trigger deployment
