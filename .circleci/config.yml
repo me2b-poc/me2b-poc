@@ -40,28 +40,21 @@ jobs:
             ./bin/regenerate-wiki.sh
 
       - run:
-          name: merge into master
+          name: merge into gh-pages
           command: |
             git config user.email "me2b-poc@protonmail.com"
             git config user.name "CircleCI Build"
-            echo "First Status"
-            git status
-            echo "Adding all"
-            git add .
-            echo "Committing"
-            git commit -a -m "Publishing Update From CircleCI"
-            echo "Second Status"
-            git status
-            echo "Go back to master"
-            git checkout master
-            echo "Pull built documentation forward"
-            git merge -X theirs update-wiki -m "Merging Documentation"
+            git add wiki.html
+            git commit -a -m "Updating Wiki [ci skip]"
+            git push origin master
 
       - run:
-          name: merge into master
+          name: trigger deployment
           command: |
-            echo "Trigger deployment"
-            git push origin master
+            git checkout gh-pages
+            git merge -X theirs master -m "Merging Documentation"
+            git commit -a -m "Publishing [ci skip]"
+            git push -f gh-pages
 
 workflows:
   version: 2
@@ -70,4 +63,4 @@ workflows:
       - build-and-deploy:
           filters:
             branches:
-              only: update-wiki
+              only: master
