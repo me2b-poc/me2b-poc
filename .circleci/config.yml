@@ -26,37 +26,43 @@ jobs:
             # fallback to using the latest cache if no exact match is found
             - v1-dependencies-
 
-      - run: yarn install
+      - run: npm install
 
       - save_cache:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
 
-      # run tests!
       - run:
+          name: rebuild wiki from tiddlers
           command: |
-            if [ "${CIRCLE_BRANCH}" == "update-wiki" ]; then
-              bin/rebuild-tiddlers.sh
-              git config user.email "me2b-poc@protonmail.com"
-              git config user.name "CircleCI Build"
-              echo "First Status"
-              git status
-              echo "Adding all"
-              git add .
-              echo "Committing"
-              git commit -a -m "Publishing Update From CircleCI"
-              echo "Second Status"
-              git status
-              echo "Go back to master"
-              git checkout master
-              echo "Pull built documentation forward"
-              git merge -X theirs update-wiki -m "Merging Documentation"
-              echo "Trigger deployment"
-              git push origin master
-              echo "Cleanup"
-              git checkout update-wiki
-            fi
+            ~/repo/node_modules/.bin/tiddlywiki test --output ~/repo --render "$:/core/save/all" wiki2.html
+            ./bin/regenerate-wiki.sh
+
+      - run:
+          name: merge into master
+          command: |
+            git config user.email "me2b-poc@protonmail.com"
+            git config user.name "CircleCI Build"
+            echo "First Status"
+            git status
+            echo "Adding all"
+            git add .
+            echo "Committing"
+            git commit -a -m "Publishing Update From CircleCI"
+            echo "Second Status"
+            git status
+            echo "Go back to master"
+            git checkout master
+            echo "Pull built documentation forward"
+            git merge -X theirs update-wiki -m "Merging Documentation"
+
+      - run:
+          name: merge into master
+          command: |
+            echo "Trigger deployment"
+            git push origin master
+
 workflows:
   version: 2
   build-and-deploy:

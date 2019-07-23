@@ -1,0 +1,13 @@
+created: 20190717070103327
+modified: 20190717072640227
+tags: 
+title: Welcome
+tmap.id: fdb0199a-cbf5-42e7-9bfa-b847d7e6a110
+
+! Welcome to the Identity Tech Map Test TiddlyWiki
+
+On the right hand side you should see a map open to the 'Default' view.
+
+@@.tc-alert
+If you see a note about 'mobile mode' try making the window larger - when the window is large enough this will go away.  Tiddly assumes that any small sized screen is a mobile device, which is not always true.
+@@

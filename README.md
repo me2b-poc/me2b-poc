@@ -1,7 +1,7 @@
 # Me2B Identity Tech PoC
 
-- [Open the original wiki](./wiki.html)
-- [Open the rebuilt wiki](./wiki2.html)
+- [Open the original wiki](./wiki-original.html)
+- [Open the rebuilt wiki](./wiki.html)
 - [Circle CI](https://circleci.com/gh/me2b-poc/workflows/me2b-poc)
 - [Prose.io](https://prose.io/#me2b-poc/me2b-poc/tree/master/test/tiddlers)
 
