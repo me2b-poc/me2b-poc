@@ -2,6 +2,7 @@
 
 - [Open the original wiki](./wiki.html)
 - [Open the rebuilt wiki](./wiki2.html)
+- [Circle CI](https://circleci.com/gh/me2b-poc/workflows/me2b-poc)
 - [Prose.io](https://prose.io/#me2b-poc/me2b-poc/tree/master/test/tiddlers)
 
 	prose.io is an option and recommended by some in the TiddlyWiki community,
@@ -19,45 +20,42 @@
 - [Proposal](./proposal.html)
 - [Requirements](./requirements.html)
 - [Markdown Tutorial](./markdown.html)
+- https://tiddlywiki.com/talkytalky/
+- https://tiddlywiki.com/static/TiddlerFiles.html
+- http://tw5magick.tiddlyspot.com/
 
 
+## Automatic Tasks
 
-## Whenever you commit to this repository
+Whenever you commit to this repository....
 
 - GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages
   in your site, from the content in your Markdown files.
-- **CI/CD** build pending
+
+- **CI/CD** in progress
 
   The CI/CD build will take all updated tiddlers and combine them into a single
   file.  It may also perform some other tasks.
 
-## Links
-
-- https://tiddlywiki.com/talkytalky/
+  This is handled by CircleCI and the console is visible [here](https://circleci.com/gh/me2b-poc/workflows/me2b-poc)
 
 
 # Design Considerations
 
 - minimize 'devops' and technical development
 
-### Budget
+# Budget
 
-Using off the shelf components, with minimal operations investment.
+- devops
 
+  Using off the shelf components, with minimal operations investment,
+  we should be able to get the devops operating budget down to something
+  like $500/yr.
 
-
-## Theory of operation
-
-### Saving Edits
-
-TiddlyWiki was developed as a "personal wiki"
+  There is significant "setup and documentation" time that is devops
 
 
-### Background
 
-https://stackshare.io/stackups/bitbucket-vs-github-vs-gitlab
-
-git itself is hosted on kernel.org - not gitlab, github, or bitbucket
 
 ## Maintenance Requirements
 
@@ -77,6 +75,21 @@ See the discussion of prose.io below.
 
 ### $10-$50/mo - A server of some sort
 
+Possibly needed, if prose.io doesn't work out.  The server runs the
+node.js version of tiddlywiki backend and exists solely to enable
+piecemeal, real-time editing of tiddlers in folders and solve the
+upload problem.
+
+# Random Notes
+
+### Saving Edits
+
+TiddlyWiki was developed as a "personal wiki" - saving is a problem,
+describe why here...
 
 
+### Background
 
+https://stackshare.io/stackups/bitbucket-vs-github-vs-gitlab
+
+git itself is hosted on kernel.org - not gitlab, github, or bitbucket
