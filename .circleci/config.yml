@@ -54,7 +54,7 @@ jobs:
             git checkout gh-pages
             git merge -X theirs master -m "Merging Documentation"
             git commit -a -m "Publishing [ci skip]"
-            git push -f gh-pages
+            git push -f origin gh-pages
 
 workflows:
   version: 2
