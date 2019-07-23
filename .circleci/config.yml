@@ -58,7 +58,7 @@ jobs:
             git merge -X theirs update-wiki -m "Merging Documentation"
 
       - run:
-          name: merge into master
+          name: trigger deployment
           command: |
             echo "Trigger deployment"
             git push origin master
