@@ -45,9 +45,8 @@ jobs:
             git config user.email "me2b-poc@protonmail.com"
             git config user.name "CircleCI Build"
             git add wiki.html
-            git commit -a -m "Updating Wiki [ci skip]"
+            git diff-index --quiet HEAD || git commit -a -m "Updating Wiki [ci skip]"
             git push origin master
-            true
 
       - run:
           name: trigger deployment
