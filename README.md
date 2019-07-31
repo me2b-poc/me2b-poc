@@ -1,8 +1,10 @@
 # Me2B Identity Tech PoC
 
+_These are just "blank" TiddlyWikis._ 
 - [Open the original wiki](./wiki-original.html)
 - [Open the rebuilt wiki](./wiki.html)
-- [Circle CI](https://circleci.com/gh/me2b-poc/workflows/me2b-poc)
+
+We got started already with some protoype data that shows each organization as a .tid file in Github. 
 - _Prose.io_
 	- [Organizations](https://prose.io/#me2b-poc/me2b-poc/tree/master/wiki/tiddlers/organizations)
 	- [About](https://prose.io/#me2b-poc/me2b-poc/tree/master/wiki/tiddlers/about)
@@ -15,12 +17,18 @@
 	access "a specific public repository", only to grant it "100% access to all
 	of my personal and private github information."
 
+_What is this Eric? Please describe here_
+- [Circle CI](https://circleci.com/gh/me2b-poc/workflows/me2b-poc)
 
-- [Ontology](./ontology.html)
-- [Raw Tiddlers](https://github.com/me2b-poc/me2b-poc/tree/master/test/tiddlers)
-- You can use the [editor on GitHub](https://github.com/me2b-poc/me2b-poc/edit/master/README.md) to maintain this file
+- [Starting Ontology](./ontology.html)_This will be devleoped further by Kaliya and Christina and ready for input by MyData_
+
+*_(I pulled the link to the Raw Tiddlers cause it is broken)_*
+
+
 - [Proposal](./proposal.html)
 - [Requirements](./requirements.html)
+
+
 - [Markdown Tutorial](./markdown.html)
 - https://tiddlywiki.com/talkytalky/
 - https://tiddlywiki.com/static/TiddlerFiles.html
