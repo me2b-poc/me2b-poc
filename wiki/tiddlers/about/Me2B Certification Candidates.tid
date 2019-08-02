@@ -1,0 +1,21 @@
+created: 20190717054711248
+modified: 20190717070907405
+tags: 
+title: Me2B Certification Candidates
+tmap.id: 64a474dc-6b23-4584-9b70-247a2de84518
+type: text/vnd.tiddlywiki
+
+<table>
+<tr>
+<th>Organization Name</th>
+<th>Category</th>
+<th>Website</th>
+</tr>
+<$list filter="[me2b.relationship[Me2B Certification Candidate]sort[organization.name]]">
+<tr>
+<td>{{!!organization.name}}</td>
+<td>{{!!category}}</td>
+<td>{{!!website}}</td>
+</tr>
+</$list>
+</table>

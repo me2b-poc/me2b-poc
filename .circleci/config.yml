@@ -36,8 +36,8 @@ jobs:
       - run:
           name: rebuild wiki from tiddlers
           command: |
-            ~/repo/node_modules/.bin/tiddlywiki test --output ~/repo --render "$:/core/save/all" wiki2.html
-            ./bin/regenerate-wiki.sh
+            echo ~/repo/node_modules/.bin/tiddlywiki test --output ~/repo --render "$:/core/save/all" wiki2.html
+            echo ./bin/regenerate-wiki.sh
 
       - run:
           name: merge into gh-pages

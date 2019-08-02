@@ -1,0 +1,41 @@
+title: $:/plugins/felixhayashi/tiddlymap/graph/views/Default/map
+
+{
+  "edges": [
+    {
+      "from": "24a4f4fd-43e3-47da-a38b-b2b110dc56cf",
+      "to": "de3cf07e-706d-4a40-bccb-0cc0ecb1cb64",
+      "type": "Directs",
+      "id": "777b8efb-b03e-420b-8c56-58f2e73b8276",
+      "label": "Directs"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "24a4f4fd-43e3-47da-a38b-b2b110dc56cf",
+      "tRef": "John Wunderlich",
+      "label": "John Wunderlich",
+      "x": -63,
+      "y": -108,
+      "fixed": {
+        "x": true,
+        "y": true
+      },
+      "color": {},
+      "font": {}
+    },
+    {
+      "id": "de3cf07e-706d-4a40-bccb-0cc0ecb1cb64",
+      "tRef": "MyData",
+      "label": "MyData",
+      "x": -90,
+      "y": -31,
+      "fixed": {
+        "x": true,
+        "y": true
+      },
+      "color": {},
+      "font": {}
+    }
+  ]
+}

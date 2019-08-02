@@ -1,0 +1,24 @@
+title: $:/plugins/felixhayashi/tiddlymap/graph/views/People Example/map
+
+{
+ "cc6513ec-8067-46b9-b71c-d3b15d1504ad": {
+  "x": -150,
+  "y": -50
+ },
+ "244bbd5a-ae38-4d2f-abf7-43d1e6131d6e": {
+  "x": 151,
+  "y": 21
+ },
+ "c6049ad5-14a9-48ff-a75c-91b5a63ef986": {
+  "x": -38,
+  "y": 85
+ },
+ "779e278f-3614-4f7f-8fa7-c0200182db5d": {
+  "x": -161,
+  "y": -143
+ },
+ "de3cf07e-706d-4a40-bccb-0cc0ecb1cb64": {
+  "x": 147,
+  "y": -80
+ }
+}

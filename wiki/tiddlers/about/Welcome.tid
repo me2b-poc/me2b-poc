@@ -4,10 +4,21 @@ tags:
 title: Welcome
 tmap.id: fdb0199a-cbf5-42e7-9bfa-b847d7e6a110
 
-! Welcome to the Identity Tech Map Test TiddlyWiki
-
-On the right hand side you should see a map open to the 'Default' view.
+On the right hand side you should see a map open to the 'People Example' view.
 
 @@.tc-alert
 If you see a note about 'mobile mode' try making the window larger - when the window is large enough this will go away.  Tiddly assumes that any small sized screen is a mobile device, which is not always true.
 @@
+
+* Explore Inline Reports
+	** [[Me2B Certification Candidates]]
+	** [[People]]
+
+* Edit Content Directly on Prose.io
+	** [[Organizations|http://prose.io/#me2b-poc/me2b-poc/tree/master/wiki/tiddlers/organizations]]
+	** [[People|http://prose.io/#me2b-poc/me2b-poc/tree/master/wiki/tiddlers/people]]
+	** [[Maps|http://prose.io/#me2b-poc/me2b-poc/tree/master/wiki/tiddlers/maps]]
+
+* This is a Map called the Live View - it is a graph of what is currently open
+
+<$tmap view="Live View" ></$tmap>

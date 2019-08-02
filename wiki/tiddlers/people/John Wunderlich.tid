@@ -2,4 +2,4 @@ title: John Wunderlich
 first.name: John
 last.name: Wunderlich
 ont.major-type: Person
-
+tmap.edges: {"c3ec3dec-738c-440d-8856-1166addd4606":{"to":"de3cf07e-706d-4a40-bccb-0cc0ecb1cb64","type":"Directs"}}

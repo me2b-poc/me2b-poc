@@ -13,7 +13,7 @@ Example table listing people
 <th>First Name</th>
 <th>Last Name</th>
 </tr>
-<$list filter="[ont.major-type[Person]sort[last name]]">
+<$list filter="[ont.major-type[Person]sort[last.name]]">
 <tr>
 <td>{{!!title}}</td>
 <td>{{!!first.name}}</td>
@@ -21,3 +21,6 @@ Example table listing people
 </tr>
 </$list>
 </table>
+
+<$tmap view="People Example" ></$tmap>
+
