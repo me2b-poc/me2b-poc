@@ -1,13 +1,5 @@
 created: 20190717054454443
 modified: 20190717071022258
 tags: 
-thisfield: thisFieldValue
 title: Docracy
-tmap.edges: {"cf3ff10b-2963-4984-863a-61689d7ec392":{"to":"394cae64-d742-4b0b-ad12-89e55ab4acff","type":"tmap:unknown"}}
 tmap.id: 98d4aff3-5e12-4d4a-a3a7-ce0dc64b76ba
-type: application/json
-
-{
- "type":"json",
- "testing":"different types"
-}
