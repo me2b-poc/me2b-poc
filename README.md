@@ -1,6 +1,6 @@
 # Me2B Identity Tech PoC
 
-## [Click here to ojpen the wiki](./wiki.html)
+## [Click here to open the wiki](./wiki.html)
 
 ## Other links
 - [Circle CI Console](https://circleci.com/gh/me2b-poc/workflows/me2b-poc)

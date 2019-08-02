@@ -1,0 +1,25 @@
+title: "Book Dashboard"
+text: """
+Add a book: <$edit-text tag="input"  tiddler="$:/temp/newbook" />
+<$button>
+    Add book
+    <$action-setfield $field="currentbook" $value={{$:/temp/newbook}} />
+    <$action-setfield $tiddler={{$:/temp/newbook}} $field="tags" $value="book" />
+    <$action-setfield $tiddler="$:/temp/newbook" $field="text" $value="" />
+</$button>
+Select a book to edit:
+   <$select field="currentbook">
+       <option value=""> -- </option>
+       <$list filter="[tag[book]]" variable="Current_Book" emptyMessage="""
+             <option value=""> There are no books available </option>
+       """>
+             <option value=<<Current_Book>> >
+                     <<Current_Book>>
+             </option>
+       </$list>
+  </$select>
+<$tiddler tiddler={{!!currentbook}} >
+    <$transclude tiddler="book" />
+</$tiddler>
+"""
+
