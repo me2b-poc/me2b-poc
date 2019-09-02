@@ -1,0 +1,10 @@
+tmap.edges:[]
+tmap.id:6f55c1a4-29f4-4917-ba90-b8be14e28e19
+tags:
+icon:
+caption:OAuth Security Workshop 2016
+title:OAuth Security Workshop 2016
+Type:Event
+Website:https://infsec.uni-trier.de/events/osw2016
+
+In context of the recent findings from researchers related to OAuth, see announcement, the IETF OAuth Working Group (WG) is convinced that the wider Internet security community can help to improve the security of Internet protocols.

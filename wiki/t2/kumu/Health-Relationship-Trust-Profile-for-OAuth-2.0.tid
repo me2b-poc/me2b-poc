@@ -1,0 +1,11 @@
+tmap.edges:[]
+tmap.id:d0ed7e3b-ff03-456d-8618-410c9c3c6123
+tags:
+icon:
+caption:Health Relationship Trust Profile for OAuth 2.0
+title:Health Relationship Trust Profile for OAuth 2.0
+Type:Specification
+
+The OAuth 2.0 protocol framework defines a mechanism to allow a resource owner to delegate access to a protected resource for a client application.
+
+This specification profiles the OAuth 2.0 protocol framework to increase baseline security, provide greater interoperability, and structure deployments in a manner specifically applicable to (but not limited to) the healthcare domain.

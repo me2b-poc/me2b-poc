@@ -1,0 +1,10 @@
+tmap.edges:[]
+tmap.id:29cd3298-e525-45f9-b274-4a4f3a1fb7ff
+tags:
+icon:
+caption:European Trust Service Status List (TSL)
+title:European Trust Service Status List (TSL)
+Type:Service
+Website:https://ec.europa.eu/digital-single-market/en/eu-trusted-list-certificate-providers-further-info-and-policy
+
+The EU Trusted Lists benefits above all to the verification of advanced e-signatures supported by qualified certificates in the meaning of the e-signature directive (1999/93/EC) as far as they have to include at least certification service providers issuing qualified certificates. Member States can however include in their Trusted Lists also other certification service providers.

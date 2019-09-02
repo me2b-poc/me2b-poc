@@ -1,0 +1,10 @@
+tmap.edges:[]
+tmap.id:45e83504-a4ba-43b7-929e-24fe3bdd150c
+tags:
+icon:
+caption:The Tracking Protection Working Group
+title:The Tracking Protection Working Group
+Type:Working Group
+Website:http://www.w3.org/2011/tracking-protection/
+
+The Tracking Protection Working Group is chartered to improve user privacy and user control by defining mechanisms for expressing user preferences around Web tracking and for blocking or allowing Web tracking elements. The group seeks to standardize the technology and meaning of Do Not Track, and of Tracking Selection Lists.

@@ -1,0 +1,16 @@
+tmap.edges:[]
+tmap.id:d04514a7-6feb-42f7-8d14-05e1fade51a4
+tags:
+icon:
+caption:UAF
+title:UAF
+Type:Working Group
+
+Passwordless UX (UAF)
+
+User carries client device with UAF stack installed
+User presents a local biometric or PIN
+Website can choose whether to retain password
+The passwordless FIDO experience is supported by the Universal Authentication Framework (UAF) protocol. In this experience, the user registers their device to the online service by selecting a local authentication mechanism such as swiping a finger, looking at the camera, speaking into the mic, entering a PIN, etc. The UAF protocol allows the service to select which mechanisms are presented to the user.
+
+Once registered, the user simply repeats the local authentication action whenever they need to authenticate to the service. The user no longer needs to enter their password when authenticating from that device. UAF also allows experiences that combine multiple authentication mechanisms such as fingerprint + PIN.

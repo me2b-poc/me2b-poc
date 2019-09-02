@@ -1,0 +1,10 @@
+tmap.edges:[]
+tmap.id:942db42d-3e81-4684-9999-2c6aba9de1ee
+tags:
+icon:
+caption:Account Chooser
+title:Account Chooser
+Type:Working Group
+Website:http://accountchooser.net
+
+Account Chooser is an industry effort to standardize that approach on both mobile and the desktop. It also provides a way for applications to start supporting identity providers to improve security without requiring a large user experience change. That security improvement is becoming more important as hackers become more sophisticated.

@@ -1,0 +1,10 @@
+tmap.edges:[]
+tmap.id:4e4f5fc1-f3c3-4d88-a599-7d2322d1787d
+tags:
+icon:
+caption:SAML - Security Assertion Markup Language
+title:SAML - Security Assertion Markup Language
+Type:Working Group
+Website:https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=security
+
+Defining and maintaining a standard, XML-based framework for creating and exchanging security information between online partners.

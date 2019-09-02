@@ -9,7 +9,7 @@ RUN apt install -y openssh-server
 COPY authorized_keys /root/.ssh/authorized_keys
 
 # set up bob wiki
-RUN git clone --depth=1 --branch v5.1.18 https://github.com/Jermolene/TiddlyWiki5.git
+RUN git clone --depth=1 --branch v5.1.20 https://github.com/Jermolene/TiddlyWiki5.git
 RUN git clone --depth=1 https://github.com/OokTech/TW5-Bob.git TiddlyWiki5/plugins/OokTech/Bob
 WORKDIR /usr/src/app/TiddlyWiki5
 RUN mkdir wikis

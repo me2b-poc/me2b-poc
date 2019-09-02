@@ -1,0 +1,25 @@
+tmap.edges:[]
+tmap.id:bb53d682-a194-4bce-b60e-214f9ba8046a
+tags:
+icon:
+caption:Privacy Considerations for Internet Protocols
+title:Privacy Considerations for Internet Protocols
+Type:Specification
+Website:https://tools.ietf.org/html/rfc6973
+
+This document offers guidance for developing privacy considerations
+   for inclusion in protocol specifications.  It aims to make designers,
+   implementers, and users of Internet protocols aware of privacy-
+   related design choices.  It suggests that whether any individual RFC
+   warrants a specific privacy considerations section will depend on the
+   document's content.
+
+Status of This Memo
+
+   This document is not an Internet Standards Track specification; it is
+   published for informational purposes.
+
+   This document is a product of the Internet Architecture Board (IAB)
+   and represents information that the IAB has deemed valuable to
+   provide for permanent record.  It represents the consensus of the
+   Internet Architecture Board (IAB).

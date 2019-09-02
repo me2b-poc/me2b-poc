@@ -1,0 +1,16 @@
+title: "book"    -- named the same as the tag used to define books
+text:"""
+ISBN: {{!!title}} 
+Edit ISBN: <$edit field="title" />
+<br/>
+Authors: <<crazyListHere "authors" "author">> 
+<br/>
+Publisher: <$select field="publisher"><option value=""> -- </option><$list filter="[tag[publisher]]"><option value=<<currentTiddler>> > <<currentTiddler>> </option></$list></$select>
+<br/>
+My random ramblings: <$edit field="text" />
+<br/>
+My Review: <$edit-text tag="textarea" field="review" />
+<br/>
+Plot synopsis: <$edit-text tag="textarea"  field="synopsis" />
+"""
+

@@ -1,0 +1,16 @@
+tmap.edges:[]
+tmap.id:4335769f-f5bd-4741-a335-558c13a24331
+tags:
+icon:
+caption:U2F
+title:U2F
+Type:Working Group
+
+Second Factor UX (U2F)
+
+User carries U2F device with built-in support in web browsers
+User presents U2F device
+Website can simplify password (e.g. – 4 digit pin)
+The second factor FIDO experience is supported by the Universal Second Factor (U2F) protocol. This experience allows online services to augment the security of their existing password infrastructure by adding a strong second factor to user login. The user logs in with a username and password as before. The service can also prompt the user to present a second factor device at any time it chooses. The strong second factor allows the service to simplify its passwords (e.g. 4–digit PIN) without compromising security.
+
+During registration and authentication, the user presents the second factor by simply pressing a button on a USB device or tapping over NFC. The user can use their FIDO U2F device across all online services that support the protocol leveraging built–in support in web browsers.

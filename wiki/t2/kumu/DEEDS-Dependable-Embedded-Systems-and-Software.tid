@@ -1,0 +1,13 @@
+tmap.edges:[]
+tmap.id:12b86137-f8ef-4639-b43b-2606140aa7e5
+tags:
+icon:
+caption:DEEDS - Dependable, Embedded Systems and Software
+title:DEEDS - Dependable, Embedded Systems and Software
+Type:Part of University
+Website:https://www.deeds.informatik.tu-darmstadt.de/deeds/
+
+The DEEDS group conducts systems research focusing on "Trustworthiness" i.e., The provisioning of "Dependable & Secure" Distributed Middleware and Services. It has two emphasis areas of:
+
+Design & Analysis: Exploration of Middleware (Software/OS/Protocols) issues in distributed and networked systems such as Data Centers, Storage and the Cloud infrastructure.
+Assessment: Quantification of Trust (Security Metrics, Threat Profiling, SLAs) and Verification/Validation (experimental FI and formal model checking)

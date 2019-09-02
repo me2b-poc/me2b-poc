@@ -1,0 +1,10 @@
+created: 20190901043919667
+first.name: Adrian
+last.name: Gropper
+modified: 20190901043919667
+ont.major-type: Person
+title: Adrian Gropper
+tmap.edges: {"2f0f991f-3f37-4afa-bcff-2bae61f7dd3c":{"to":"779e278f-3614-4f7f-8fa7-c0200182db5d","type":"Key Person"},"f1637122-16ba-43f8-aa2b-8c8dad8a9253":{"to":"779e278f-3614-4f7f-8fa7-c0200182db5d","type":"EdgeTypeFlag"}}
+tmap.id: cc6513ec-8067-46b9-b71c-d3b15d1504ad
+type: text/vnd.tiddlywiki
+

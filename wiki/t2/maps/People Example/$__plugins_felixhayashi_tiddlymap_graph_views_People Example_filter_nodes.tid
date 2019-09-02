@@ -1,0 +1,6 @@
+created: 20190901043848440
+filter: [field:tmap.id[cc6513ec-8067-46b9-b71c-d3b15d1504ad]] [field:tmap.id[244bbd5a-ae38-4d2f-abf7-43d1e6131d6e]] [field:tmap.id[c6049ad5-14a9-48ff-a75c-91b5a63ef986]] [field:tmap.id[779e278f-3614-4f7f-8fa7-c0200182db5d]] [field:tmap.id[de3cf07e-706d-4a40-bccb-0cc0ecb1cb64]] [field:tmap.id[30e5571e-cdad-4123-813d-bbbfe00b71c4]]
+modified: 20190901043848440
+title: $:/plugins/felixhayashi/tiddlymap/graph/views/People Example/filter/nodes
+type: text/vnd.tiddlywiki
+

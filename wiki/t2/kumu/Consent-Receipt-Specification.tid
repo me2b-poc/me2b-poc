@@ -1,0 +1,11 @@
+tmap.edges:[]
+tmap.id:da409c05-e72d-4f7a-bab2-4203441daeb4
+tags:
+icon:
+caption:Consent Receipt Specification
+title:Consent Receipt Specification
+Type:Specification
+Website:https://kantarainitiative.org/confluence/display/infosharing/Consent+Receipt+Specification
+
+A consent receipt is a record of a consent provided to an individual at the point in a person agrees to the sharing of personal information.  It's purpose is to capture the privacy policy and its purpose for sharing personal information   so it can be  easily  used by people to communicate and manage consent and sharing of personal information once it is provided. 
+The working title of the specification has been, the Minimum Viable Consent Receipt.  (MVCR)

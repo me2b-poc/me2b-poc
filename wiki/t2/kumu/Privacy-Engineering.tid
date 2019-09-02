@@ -1,0 +1,12 @@
+tmap.edges:[]
+tmap.id:f548a397-31da-448d-a9b2-7e1a26335f6d
+tags:
+icon:
+caption:Privacy Engineering
+title:Privacy Engineering
+Type:Working Group
+Website:http://csrc.nist.gov/projects/privacy_engineering/
+
+Privacy is a challenging subject that spans a number of domains, including law, policy and technology. Unlike other fields such as safety risk management and cybersecurity, system designers and engineers currently lack well-characterized, reusable, standards-based tools and practices to understand and mitigate privacy risks and integrate appropriate privacy controls into information systems.
+
+NIST’s work on Privacy Engineering focuses on providing guidance that can be used to decrease privacy risks, and enable organizations to make purposeful decisions about resource allocation and effective implementation of controls in information systems.

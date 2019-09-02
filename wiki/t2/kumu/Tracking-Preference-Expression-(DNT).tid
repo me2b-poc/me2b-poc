@@ -1,0 +1,10 @@
+tmap.edges:[]
+tmap.id:e0e1f971-822a-415f-9592-a827a4ba589d
+tags:
+icon:
+caption:Tracking Preference Expression (DNT)
+title:Tracking Preference Expression (DNT)
+Type:Specification
+Website:http://www.w3.org/TR/tracking-dnt/
+
+This specification defines the DNT request header field as an HTTP mechanism for expressing the user's preference regarding tracking, an HTML DOM property to make that expression readable by scripts, and APIs that allow scripts to register site-specific exceptions granted by the user. It also defines mechanisms for sites to communicate whether and how they honor a received preference through use of the Tk response header field and well-known resources that provide a machine-readable tracking status.

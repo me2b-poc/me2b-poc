@@ -1,0 +1,10 @@
+tmap.edges:[]
+tmap.id:9c8f1919-ab57-4663-8022-2580ad0b1adb
+tags:
+icon:
+caption:Who Goes There?:  Authentication Through the Lens of Privacy
+title:Who Goes There?:  Authentication Through the Lens of Privacy
+Type:Publication
+Website:http://www.nap.edu/catalog/10656/who-goes-there-authentication-through-the-lens-of-privacy
+
+Who Goes There?: Authentication Through the Lens of Privacy explores authentication technologies (passwords, PKI, biometrics, etc.) and their implications for the privacy of the individuals being authenticated. As authentication becomes ever more ubiquitous, understanding its interplay with privacy is vital. The report examines numerous concepts, including authentication, authorization, identification, privacy, and security. It provides a framework to guide thinking about these issues when deciding whether and how to use authentication in a particular context. The book explains how privacy is affected by system design decisions. It also describes government’s unique role in authentication and what this means for how government can use authentication with minimal invasions of privacy. In addition, Who Goes There? outlines usability and security considerations and provides a primer on privacy law and policy.

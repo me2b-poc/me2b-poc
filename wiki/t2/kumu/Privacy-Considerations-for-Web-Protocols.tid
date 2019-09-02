@@ -1,0 +1,10 @@
+tmap.edges:[]
+tmap.id:4bb5cd5b-4f59-456d-8bdc-d126c9e58ded
+tags:
+icon:
+caption:Privacy Considerations for Web Protocols
+title:Privacy Considerations for Web Protocols
+Type:Specification
+Website:https://w3c.github.io/privacy-considerations/
+
+This document offers guidance for writing privacy considerations test in W3C specifications. It aims to make designers, implementers, and those who deploy W3C specifications aware of privacy- related design choices.

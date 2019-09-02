@@ -1,0 +1,26 @@
+created: 20190717054711248
+major.type: testing
+modified: 20190717070907405
+tags: 
+title: People
+tmap.id: 64a474dc-6b23-4584-9b70-247a2de84518
+type: text/vnd.tiddlywiki
+
+Example table listing people
+<table>
+<tr>
+<th>Name</th>
+<th>First Name</th>
+<th>Last Name</th>
+</tr>
+<$list filter="[ont.major-type[Person]sort[last.name]]">
+<tr>
+<td>{{!!title}}</td>
+<td>{{!!first.name}}</td>
+<td>{{!!last.name}}</td>
+</tr>
+</$list>
+</table>
+
+<$tmap view="People Example" ></$tmap>
+

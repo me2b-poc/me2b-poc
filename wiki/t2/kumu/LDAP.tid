@@ -1,0 +1,15 @@
+tmap.edges:[]
+tmap.id:1b251770-1098-460f-b6d6-916efbb8e390
+tags:
+icon:
+caption:LDAP
+title:LDAP
+Type:Specification
+Website:https://tools.ietf.org/html/rfc4511
+
+This document describes the protocol elements, along with their
+   semantics and encodings, of the Lightweight Directory Access Protocol
+   (LDAP).  LDAP provides access to distributed directory services that
+   act in accordance with X.500 data and service models.  These protocol
+   elements are based on those described in the X.500 Directory Access
+   Protocol (DAP).

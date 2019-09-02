@@ -1,0 +1,22 @@
+tmap.edges:[]
+tmap.id:d91ae9d7-0201-494d-9f32-3b4a96ad8ffc
+tags:
+icon:
+caption:Cryptography and Security Mechanisms WG2
+title:Cryptography and Security Mechanisms WG2
+Type:Working Group
+
+WG 2 provides a center of expertise for the standardization of IT Security techniques and mechanisms within JTC 1.
+Terms of Reference:
+* identify the need and requirements for these techniques and mechanisms in IT systems and applications;
+* develop terminology, general models and standards for these techniques and mechanisms for use in security services.
+
+The scope covers both cryptographic and non-cryptographic techniques and mechanisms including:
+* confidentiality;
+* entity authentication;
+* non-repudation;
+* key management;
+* data integrity such as message authentication;
+** hash-functions;
+** digital signatures.
+The mechanisms in general include several options with respect to the techniques used including symmetric cryptographic, asymmetric cryptographic and non-cryptographic.

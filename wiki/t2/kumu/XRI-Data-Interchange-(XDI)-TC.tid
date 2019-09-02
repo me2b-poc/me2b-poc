@@ -1,0 +1,14 @@
+tmap.edges:[]
+tmap.id:88c108b3-5783-4744-bafc-23ff7971b52f
+tags:
+icon:
+caption:XRI Data Interchange (XDI) TC
+title:XRI Data Interchange (XDI) TC
+Type:Working Group
+Website:https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=xdi
+
+The purpose of the XDI TC is to define a format and protocol for semantic data interchange using a standard addressable semantic graph model serialized in JSON.
+
+For more information, see the TC Charter and FAQ.
+
+The TC operates under a standing rule approved 17 July 2008 under which the TC does not hold regular official meetings and conducts all business by electronic ballot only. Unofficial weekly meetings are held to enable discussion among members but no business is conducted nor actions taken at those meetings.

@@ -1,0 +1,11 @@
+tmap.edges:[]
+tmap.id:43884193-06f9-4189-ab6c-db41edff76ce
+tags:
+icon:
+caption:Do Not Track: A Universal Third-Party Web Tracking Opt Out
+title:Do Not Track: A Universal Third-Party Web Tracking Opt Out
+Type:Specification
+Tags:dead
+Website:https://datatracker.ietf.org/doc/draft-mayer-do-not-track/
+
+This document defines the syntax and semantics of Do Not Track, an HTTP header-based mechanism that enables users to express preferences about third-party web tracking. It also provides a standard for how web services should comply with such user preferences.

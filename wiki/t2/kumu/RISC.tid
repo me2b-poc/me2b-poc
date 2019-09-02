@@ -1,0 +1,14 @@
+tmap.edges:[]
+tmap.id:b99d4423-4ce3-4db7-a9f6-2413bbb6a10a
+tags:
+icon:
+caption:RISC
+title:RISC
+Type:Working Group
+Website:http://openid.net/wg/risc/
+
+The goal of RISC is to provide data sharing schemas, privacy recommendations and protocols to:
+* Share information about important security events in order to thwart attackers from leveraging compromised accounts from one Service Provider to gain access to accounts on other Service Providers (mobile or web application developers and owners).
+* Enable users and providers to coordinate in order to securely restore accounts following a compromise.
+
+Internet accounts that use email addresses or phone numbers as the primary identifier for the account will be the initial focus.

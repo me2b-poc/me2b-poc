@@ -1,0 +1,13 @@
+tmap.edges:[]
+tmap.id:4ecf73ec-bc73-4002-8af9-5c2dc0a5df4e
+tags:
+icon:
+caption:FIDO Alliance
+title:FIDO Alliance
+Type:Organization / Trade Association
+Start Date:2016-09-22
+Website:https://fidoalliance.org/
+
+The FIDO protocols use standard public key cryptography techniques to provide stronger authentication. During registration with an online service, the user’s client device creates a new key pair. It retains the private key and registers the public key with the online service. Authentication is done by the client device proving possession of the private key to the service by signing a challenge. The client’s private keys can be used only after they are unlocked locally on the device by the user. The local unlock is accomplished by a user–friendly and secure action such as swiping a finger, entering a PIN, speaking into a microphone, inserting a second–factor device or pressing a button.
+
+The FIDO protocols are designed from the ground up to protect user privacy. The protocols do not provide information that can be used by different online services to collaborate and track a user across the services. Biometric information, if used, never leaves the user’s device.

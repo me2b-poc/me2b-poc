@@ -1,0 +1,10 @@
+created: 20190901043817554
+first.name: John
+last.name: Wunderlich
+modified: 20190901051133367
+ont.major-type: Person
+title: John Wunderlich
+tmap.edges: {"c3ec3dec-738c-440d-8856-1166addd4606":{"to":"de3cf07e-706d-4a40-bccb-0cc0ecb1cb64","type":"Directs"},"b7d4d6b8-d3ca-4165-b34a-a3f40e215332":{"to":"de3cf07e-706d-4a40-bccb-0cc0ecb1cb64","type":"EdgeTypeFlag"},"28fa8025-b195-40f6-8d11-a7ce0d59f0d5":{"to":"cc6513ec-8067-46b9-b71c-d3b15d1504ad","type":"FLAGFLAG"}}
+tmap.id: 30e5571e-cdad-4123-813d-bbbfe00b71c4
+type: text/vnd.tiddlywiki
+

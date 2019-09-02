@@ -1,0 +1,16 @@
+tmap.edges:[]
+tmap.id:9ab647b6-cdec-4f19-9914-ef0810804ba9
+tags:
+icon:
+caption:MODRNA Authentication Profile
+title:MODRNA Authentication Profile
+Type:Specification
+Website:https://bitbucket.org/openid/mobile/raw/default/draft-mobile-authentication-01.txt
+
+RPs are keen to use high quality authentication methods, which can be provided by Mobile Network Operators (MNO).  However a RP must be able to describe its demands for an authentication request and it must be able to do this in an interoperable way.
+
+The MODRNA Authentication Profile will specify how RP's request a certain level of assurance for the authentication.
+
+In addition, the profile will specify an encrypted login hint token to allow for the transport of user identifiers to the OP in a privacy preserving fashion.
+
+Lastly, the profile will specify an additional message parameter intended to serve as an interlock between the user's consumption device and authentication device.

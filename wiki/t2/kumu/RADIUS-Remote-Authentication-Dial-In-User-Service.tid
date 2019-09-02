@@ -1,0 +1,13 @@
+tmap.edges:[]
+tmap.id:3405d809-b0ab-489a-8343-6fa679208f9d
+tags:
+icon:
+caption:RADIUS - Remote Authentication Dial In User Service
+title:RADIUS - Remote Authentication Dial In User Service
+Type:Specification
+Website:https://tools.ietf.org/html/rfc2865
+
+This document describes a protocol for carrying authentication,
+   authorization, and configuration information between a Network Access
+   Server which desires to authenticate its links and a shared
+   Authentication Server.

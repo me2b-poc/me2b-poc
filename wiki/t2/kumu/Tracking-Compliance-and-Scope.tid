@@ -1,0 +1,10 @@
+tmap.edges:[]
+tmap.id:cb1dde78-ab56-4a34-90ce-2ca2b111554c
+tags:
+icon:
+caption:Tracking Compliance and Scope
+title:Tracking Compliance and Scope
+Type:Specification
+Website:http://www.w3.org/TR/tracking-compliance/
+
+This specification defines a set of practices for compliance with a user's Do Not Track (DNT) tracking preference to which a server may claim adherence.

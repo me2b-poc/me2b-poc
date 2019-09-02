@@ -29,9 +29,9 @@
   "API": {},
   "wikiPathBase": "/usr/src/app/TiddlyWiki5",
   "serverInfo": {
-    "ipAddress": "wiki.korsimoro.net",
+    "ipAddress": "127.0.0.1",
     "port": 80,
-    "host": "wiki.korsimoro.net"
+    "host": "localhost"
   },
   "includePluginList": {},
   "excludePluginList": {}
