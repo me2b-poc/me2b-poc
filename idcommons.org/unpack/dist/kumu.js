@@ -167,7 +167,10 @@ var SimpleKumuElementType = /** @class */ (function (_super) {
     __extends(SimpleKumuElementType, _super);
     function SimpleKumuElementType(type, model) {
         var _this = _super.call(this, type, model) || this;
-        _this.parent = undefined;
+        if (_this.depth > 1) {
+            var parentType = _this.parts.slice(0, _this.depth - 1).join("/");
+            _this.parent = _this.model.encounterElementType(parentType);
+        }
         return _this;
     }
     return SimpleKumuElementType;
@@ -220,10 +223,6 @@ var KumuModel = /** @class */ (function () {
         return this.elementTypes[type];
     };
     KumuModel.prototype.encounterConnectionType = function (type) {
-        var result = this._encounterConnectionType(type);
-        return result;
-    };
-    KumuModel.prototype._encounterConnectionType = function (type) {
         if (!type)
             return this.defaultConnectionType;
         if (!this.connectionTypes[type])

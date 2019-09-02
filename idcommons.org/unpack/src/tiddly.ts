@@ -51,6 +51,7 @@ export interface TiddlerFileBase {
 	templates:string
 	createNodeTiddler:(data:TiddlerData) => NodeTiddler
 	createEdgeTypeTiddler:(parts:string[]) => EdgeTypeTiddler
+	createNodeTypeTiddler:(parts:string[]) => NodeTypeTiddler
 	ensurePath:(base:string,dir?:string) => string
 }
 
@@ -147,19 +148,79 @@ export class SimpleNodeTiddler extends SimpleTiddler implements NodeTiddler
 }
 
 
-
 export class NodeTypeTiddler extends SimpleTiddler  {
-	constructor(data:TiddlerData,base:TiddlerFileBase) {
-		super(data,base)
-		//"$:/plugins/felixhayashi/tiddlymap/graph/nodeTypes/"+type)
-		//this.tiddlerfile = slugify(type)
+	/*
+	created: 20190902112311677
+	modified: 20190902112605892
+	priority: 1
+	scope: [field:element.type[working-group]]
+	style: {"color":{"border":"rgba(146,233,110,1)","background":"rgba(252,53,129,1)"}}
+	title: $:/plugins/felixhayashi/tiddlymap/graph/nodeTypes/working-group
+	type: text/vnd.tiddlywiki
+*/
+	parts:string[]
+	slugchain:string[]
+	filepart:string
+	dirchain?:string[]
+
+	scope:string
+	style:string
+	constructor(parts:string[],base:TiddlerFileBase) {
+		super({
+			title:"$:/plugins/felixhayashi/tiddlymap/graph/nodeTypes/"+parts.join("/")
+		},base)
+		this.parts = parts
+		this.slugchain=[]
+		const len = this.parts.length
+		for(let idx in parts)
+			this.slugchain[idx]=slugify(parts[idx])
+		if (len == 1) {
+			this.filepart = this.slugchain[0]
+			this.dirchain = undefined
+		}
+		else {
+			this.filepart = this.slugchain[len-1]
+			this.dirchain=this.slugchain.slice(0,len-1)
+			}
+
+		this.scope='[field:element.type['+this.filepart+']]'
+		this.style='{"color":{"border":"'+this.randomRGBA()+'","background":"'+this.randomRGBA()+'"}}'
 	}
+
+	tiddlerdata():string {
+		return super.tiddlerdata() +
+		"scope: "+this.scope+"\n"+
+		"style: "+this.style+"\n";
+	}
+
+	randomRGBA():string {
+		return 'rgba('
+							+Math.round(256*Math.random())+','
+							+Math.round(256*Math.random())+','
+							+Math.round(256*Math.random())+','
+							+Math.round(256*Math.random())+')'
+	}
+
+	tiddlerdir():string {
+		if(this.dirchain)
+			return path.join(this.base.mapNodeTypes,this.dirchain.join("/"))
+		else
+			return this.base.mapNodeTypes;
+	}
+
+	tiddlerfile():string {
+		return path.join(this.tiddlerdir(),this.filepart + ".tid")
+	}
+
 }
+
 export class EdgeTypeTiddler extends SimpleTiddler  {
 	parts:string[]
 	slugchain:string[]
 	filepart:string
 	dirchain?:string[]
+
+	style:string
 	constructor(parts:string[],base:TiddlerFileBase) {
 		super({
 			title:"$:/plugins/felixhayashi/tiddlymap/graph/edgeTypes/"+parts.join("/")
@@ -177,6 +238,22 @@ export class EdgeTypeTiddler extends SimpleTiddler  {
 			this.filepart = this.slugchain[len-1]
 			this.dirchain=this.slugchain.slice(0,len-1)
 			}
+
+		this.style='{"color":{"color":"'+this.randomRGBA()+'"},"width":'+Math.round(1+15*Math.random())+'}'
+
+	}
+
+	tiddlerdata():string {
+		return super.tiddlerdata() +
+		"style: "+this.style+"\n";
+	}
+
+	randomRGBA():string {
+		return 'rgba('
+							+Math.round(256*Math.random())+','
+							+Math.round(256*Math.random())+','
+							+Math.round(256*Math.random())+','
+							+Math.round(256*Math.random())+')'
 	}
 
 	tiddlerdir():string {
@@ -305,6 +382,10 @@ export class SimpleTiddlerFileBase implements TiddlerFileBase {
 	}
 	createEdgeTypeTiddler(parts:string[]):EdgeTypeTiddler {
 		const result = new EdgeTypeTiddler(parts,this)
+		return result
+	}
+	createNodeTypeTiddler(parts:string[]):NodeTypeTiddler {
+		const result = new NodeTypeTiddler(parts,this)
 		return result
 	}
 

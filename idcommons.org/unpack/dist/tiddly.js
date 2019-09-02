@@ -94,11 +94,48 @@ var SimpleNodeTiddler = /** @class */ (function (_super) {
 exports.SimpleNodeTiddler = SimpleNodeTiddler;
 var NodeTypeTiddler = /** @class */ (function (_super) {
     __extends(NodeTypeTiddler, _super);
-    function NodeTypeTiddler(data, base) {
-        return _super.call(this, data, base) || this;
-        //"$:/plugins/felixhayashi/tiddlymap/graph/nodeTypes/"+type)
-        //this.tiddlerfile = slugify(type)
+    function NodeTypeTiddler(parts, base) {
+        var _this = _super.call(this, {
+            title: "$:/plugins/felixhayashi/tiddlymap/graph/nodeTypes/" + parts.join("/")
+        }, base) || this;
+        _this.parts = parts;
+        _this.slugchain = [];
+        var len = _this.parts.length;
+        for (var idx in parts)
+            _this.slugchain[idx] = slugify_1.default(parts[idx]);
+        if (len == 1) {
+            _this.filepart = _this.slugchain[0];
+            _this.dirchain = undefined;
+        }
+        else {
+            _this.filepart = _this.slugchain[len - 1];
+            _this.dirchain = _this.slugchain.slice(0, len - 1);
+        }
+        _this.scope = '[field:element.type[' + _this.filepart + ']]';
+        _this.style = '{"color":{"border":"' + _this.randomRGBA() + '","background":"' + _this.randomRGBA() + '"}}';
+        return _this;
     }
+    NodeTypeTiddler.prototype.tiddlerdata = function () {
+        return _super.prototype.tiddlerdata.call(this) +
+            "scope: " + this.scope + "\n" +
+            "style: " + this.style + "\n";
+    };
+    NodeTypeTiddler.prototype.randomRGBA = function () {
+        return 'rgba('
+            + Math.round(256 * Math.random()) + ','
+            + Math.round(256 * Math.random()) + ','
+            + Math.round(256 * Math.random()) + ','
+            + Math.round(256 * Math.random()) + ')';
+    };
+    NodeTypeTiddler.prototype.tiddlerdir = function () {
+        if (this.dirchain)
+            return path_1.default.join(this.base.mapNodeTypes, this.dirchain.join("/"));
+        else
+            return this.base.mapNodeTypes;
+    };
+    NodeTypeTiddler.prototype.tiddlerfile = function () {
+        return path_1.default.join(this.tiddlerdir(), this.filepart + ".tid");
+    };
     return NodeTypeTiddler;
 }(SimpleTiddler));
 exports.NodeTypeTiddler = NodeTypeTiddler;
@@ -121,8 +158,20 @@ var EdgeTypeTiddler = /** @class */ (function (_super) {
             _this.filepart = _this.slugchain[len - 1];
             _this.dirchain = _this.slugchain.slice(0, len - 1);
         }
+        _this.style = '{"color":{"color":"' + _this.randomRGBA() + '"},"width":' + Math.round(1 + 15 * Math.random()) + '}';
         return _this;
     }
+    EdgeTypeTiddler.prototype.tiddlerdata = function () {
+        return _super.prototype.tiddlerdata.call(this) +
+            "style: " + this.style + "\n";
+    };
+    EdgeTypeTiddler.prototype.randomRGBA = function () {
+        return 'rgba('
+            + Math.round(256 * Math.random()) + ','
+            + Math.round(256 * Math.random()) + ','
+            + Math.round(256 * Math.random()) + ','
+            + Math.round(256 * Math.random()) + ')';
+    };
     EdgeTypeTiddler.prototype.tiddlerdir = function () {
         if (this.dirchain)
             return path_1.default.join(this.base.mapEdgeTypes, this.dirchain.join("/"));
@@ -226,6 +275,10 @@ var SimpleTiddlerFileBase = /** @class */ (function () {
     };
     SimpleTiddlerFileBase.prototype.createEdgeTypeTiddler = function (parts) {
         var result = new EdgeTypeTiddler(parts, this);
+        return result;
+    };
+    SimpleTiddlerFileBase.prototype.createNodeTypeTiddler = function (parts) {
+        var result = new NodeTypeTiddler(parts, this);
         return result;
     };
     return SimpleTiddlerFileBase;
