@@ -1,0 +1,19 @@
+$field: currentbook
+$tiddler: $=
+$value: {{$="/temp/newbook}}
+&gt;": 
+<$action-setfield: 
+a: 
+add: 
+book: <$edit-text tag="input"  tiddler="$:/temp/newbook" />
+created: 20190901043812475
+edit: 
+modified: 20190901043812475
+newbook&quot;: 
+select: 
+temp: 
+title: "Book Dashboard"
+tmap.id: abb6c356-ce16-48ae-b582-bf392fdf03b3
+to: 
+type: text/vnd.tiddlywiki
+

@@ -1,0 +1,13 @@
+tmap.edges:[]
+tmap.id:d865c1bc-20fb-4463-ae81-903199a90181
+tags:
+icon:
+caption:Future Trust
+title:Future Trust
+Type:Research Project
+Tags:Europe
+Website:https://www.futuretrust.eu/home/
+
+Against the background of the regulation 2014/910/EU on electronic identification (eID) and trusted services for electronic transactions in the internal market (eIDAS), the FutureTrust project, which is funded within the EU Framework Programme for Research and Innovation (Horizon 2020) under Grant Agreement No. 700542, aims at supporting the practical implementation of the regulation in Europe and beyond.
+
+For this purpose the FutureTrust project will address the need for globally interoperable solutions through basic research with respect to the foundations of trust and trustworthiness, actively support the standardisation process in relevant areas, and provide Open Source software components and trustworthy services which will ease the use of eID and electronic signature technology in real world applications. In particular the FutureTrust project will extend the existing European Trust Service Status List (TSL) infrastructure towards a “Global Trust List”, develop a comprehensive Open Source Validation Service as well as a scalable Preservation Service for electronic signatures and seals and will provide components for the eID-based application for qualified certificates across borders, and for the trustworthy creation of remote signatures and seals in a mobile environment. The present contribution provides an overview of the FutureTrust project and invites further stakeholders to actively participate as associated partners and contribute to the development of future trust services for trustworthy global transactions.

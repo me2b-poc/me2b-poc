@@ -1,0 +1,17 @@
+tmap.edges:[]
+tmap.id:07c5cdc7-2f8a-4449-9cae-6a55bc1a0f97
+tags:
+icon:
+caption:MAPRG Measurement and Analysis for Protocols Research Group
+title:MAPRG Measurement and Analysis for Protocols Research Group
+Type:Research Project
+Start Date:2016-08-22
+Website:https://irtf.org/maprg
+
+Our Internet has grown into something that differs from what was envisioned. Its protocols sometimes operate in an environment other than than that for which they were designed. For instance, some network elements treat some protocols differently than others and those protocols themselves are sometimes reused and abused in ways initially unforeseen. The Measurement and Analysis for Protocols Research Group (MAP) Research Group (RG) explores such phenomena by measurement with the aim to inform protocol engineering and practice.
+
+Many protocol engineering efforts in a standards development context, as well as best practices for the operation of IETF-defined protocols, can benefit from insight provided by Internet measurements of various kinds. Likewise, Internet measurement research efforts can stand to gain from contacts with the IETF. The Measurement and Analysis for Protocols Research Group Research Group (MAPRG) aims to provide a forum for interchange between these two communities, supporting:
+* exchange of measurement-derived insight;
+* discussion of techniques and best practices for measurement relevant to protocol engineering and network operations;
+* collaborations to share data supporting these measurements; and
+* a “landing pad” for the Internet measurement community to introduce its efforts to the IETF.

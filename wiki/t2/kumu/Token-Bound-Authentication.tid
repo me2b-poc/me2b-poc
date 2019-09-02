@@ -1,0 +1,10 @@
+tmap.edges:[]
+tmap.id:2fa44558-f644-425d-9406-c32ceafde5d7
+tags:
+icon:
+caption:Token Bound Authentication
+title:Token Bound Authentication
+Type:Specification
+Website:http://openid.net/specs/openid-connect-token-bound-authentication-1_0.html
+
+This specification enables OpenID Connect implementations to apply Token Binding to the OpenID Connect ID Token. This cryptographically binds the ID Token to the TLS connections over which the authentication occurred. This use of Token Binding protects the authentication flow from man-in-the-middle and token export and replay attacks.

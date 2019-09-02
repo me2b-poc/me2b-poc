@@ -1,0 +1,9 @@
+tmap.edges:[]
+tmap.id:3e323592-32d6-4e7b-9502-a8801dfe6964
+tags:
+icon:
+caption:Optical Memory Cards WG9
+title:Optical Memory Cards WG9
+Type:Working Group
+
+Enhanced OMC technologies enabling more data capacity, fast access and high reliability based on existing standard technologies or new technologies. Software or programming interface for accessing OMC data contents. (Host application program will be able to use this interface for easier implementation. Access method software of OMCs application program.) Physical assignment and /or logical assignment for OMC media use. Logical data structures in OMCs data (file structure etc).

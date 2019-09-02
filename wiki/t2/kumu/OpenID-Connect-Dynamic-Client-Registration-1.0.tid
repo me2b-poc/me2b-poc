@@ -1,0 +1,10 @@
+tmap.edges:[]
+tmap.id:539633cc-6da0-47fc-8f87-2ec68f6fe538
+tags:
+icon:
+caption:OpenID Connect Dynamic Client Registration 1.0
+title:OpenID Connect Dynamic Client Registration 1.0
+Type:Specification
+Website:http://openid.net/specs/openid-connect-registration-1_0.html
+
+This specification defines how an OpenID Connect Relying Party can dynamically register with the End-User's OpenID Provider, providing information about itself to the OpenID Provider, and obtaining information needed to use it, including the OAuth 2.0 Client ID for this Relying Party.

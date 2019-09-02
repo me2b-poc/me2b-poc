@@ -1,0 +1,10 @@
+tmap.edges:[]
+tmap.id:9e8b2002-edda-48c7-961c-9f082bb23de6
+tags:
+icon:
+caption:OpenID Connect Profile for SCIM Services
+title:OpenID Connect Profile for SCIM Services
+Type:Specification
+Website:http://openid.net/specs/openid-connect-scim-profile-1_0.html
+
+SCIM (RFC7644) is an IETF protocol that enables HTTP clients to retrieve and manage cross-domain identities. OpenID Connect 1.0 is a simple identity layer on top of the OAuth 2.0 protocol which offers access to profile information through a UserInfo endpoint. This specification defines how OpenID Connect relying parties may discover availability of and register for, and access, SCIM services as part of an OpenID Provider (OP) services.

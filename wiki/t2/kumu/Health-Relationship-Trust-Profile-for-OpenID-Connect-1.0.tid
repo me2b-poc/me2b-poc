@@ -1,0 +1,10 @@
+tmap.edges:[]
+tmap.id:e00e61cc-5aa2-46f5-b90a-00f70d45d097
+tags:
+icon:
+caption:Health Relationship Trust Profile for OpenID Connect 1.0
+title:Health Relationship Trust Profile for OpenID Connect 1.0
+Type:Specification
+Website:http://openid.bitbucket.org/HEART/openid-heart-oidc.html
+
+This specification profiles the OpenID Connect protocol to increase baseline security, provide greater interoperability, and structure deployments in a manner specifically applicable to (but not limited to) the healthcare domain.

@@ -1,0 +1,12 @@
+tmap.edges:[]
+tmap.id:dbc5798b-5369-472d-a011-4cd3decb3391
+tags:
+icon:
+caption:Health Relationship Trust Profile for User Managed Access 1.0
+title:Health Relationship Trust Profile for User Managed Access 1.0
+Type:Specification
+Website:http://openid.bitbucket.org/HEART/openid-heart-uma.html
+
+The User Managed Access protocol defines a method for an end user to introduce a resource to an authorization server, define a set of policies governing access to that resource, and for a requesting party to provide claims to fulfill those policies in order to gain access to the resource.
+
+This specification profiles the User Managed Access protocol to increase baseline security, provide greater interoperability, and structure deployments in a manner specifically applicable to (but not limited to) the healthcare domain.

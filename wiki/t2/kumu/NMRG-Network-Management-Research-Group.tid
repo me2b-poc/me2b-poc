@@ -1,0 +1,17 @@
+tmap.edges:[]
+tmap.id:b005241d-3e63-49cf-98c1-e3f8306decca
+tags:
+icon:
+caption:NMRG Network Management Research Group
+title:NMRG Network Management Research Group
+Type:Research Project
+Start Date:1999-09-14
+Website:https://irtf.org/nmrg
+
+The Network Management Research Group (NMRG) provides a forum for researchers to explore new technologies for the management of the Internet. In particular, the NMRG will work on solutions for problems that are not yet considered well understood enough for engineering work within the IETF.
+
+The initial focus of the NMRG will be on higher-layer management services that interface with the current Internet management framework. This includes communication services between management systems, which may belong to different management domains, as well as customer-oriented management services. The NMRG is expected to identify and document requirements, to survey possible approaches, to provide specifications for proposed solutions, and to prove concepts with prototype implementations that can be tested in large-scale real-world environments.
+
+The IETF Operations and Management Area Directors are members of the NMRG mailing list and invited to NMRG meetings in order to ensure free flow of information in both directions, and to avoid duplication of work with the various IETF working groups.
+
+The group will report its progress through a publicly accessible web site and presentations at IETF meetings. Specifications developed by the NMRG will be submitted for publication as Experimental or Informational RFCs.

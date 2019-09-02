@@ -1,0 +1,10 @@
+tmap.edges:[]
+tmap.id:350320b1-bdce-4ea6-8a12-5904c1a9accc
+tags:
+icon:
+caption:Identity in the Cloud
+title:Identity in the Cloud
+Type:Working Group
+Website:https://www.oasis-open.org/committees/id-cloud/
+
+he OASIS IDCloud TC works to address the serious security challenges posed by identity management in cloud computing. The TC identifies gaps in existing identity management standards and investigates the need for profiles to achieve interoperability within current standards. It performs risk and threat analyses on collected use cases and produces guidelines for mitigating vulnerabilities.

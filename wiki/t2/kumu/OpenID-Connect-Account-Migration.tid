@@ -1,0 +1,9 @@
+tmap.edges:[]
+tmap.id:aaf1d982-26fb-4527-9426-9269bf19609b
+tags:
+icon:
+caption:OpenID Connect Account Migration
+title:OpenID Connect Account Migration
+Type:Specification
+
+This document specifies a protocol for migrating user accounts among OpenID Connect OPs. The goal is to allow users to migrate between OpenID Connect OPs while retaining access to their existing services (RPs). Although the need for such a function was first raised in the context of the Mobile Connect initiative ([MobileConnect]), the intend is to design a protocol applicable on a general basis.

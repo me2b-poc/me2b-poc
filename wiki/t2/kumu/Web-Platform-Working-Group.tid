@@ -1,0 +1,10 @@
+tmap.edges:[]
+tmap.id:2796cec2-8deb-4582-aeb9-b936c878fef0
+tags:
+icon:
+caption:Web Platform Working Group
+title:Web Platform Working Group
+Type:Working Group
+Website:https://www.w3.org/WebPlatform/WG/
+
+We continue the development of the HTML language, providing specifications that enable improved client-side application development on the Web, including application programming interfaces (APIs) for client-side development and markup vocabularies for describing and controlling client-side application behavior.

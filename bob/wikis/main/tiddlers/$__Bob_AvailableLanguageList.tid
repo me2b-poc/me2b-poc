@@ -10,6 +10,7 @@ type: application/json
   "de-CH": "Deutsch (Schweiz)",
   "de-DE": "Deutsch (Deutschland)",
   "el-GR": "Greek (Greece)",
+  "en-US": "English (US)",
   "es-ES": "Castellano. (Spain)",
   "fa-IR": "Persian (Iran)",
   "fr-FR": "Français (France)",
@@ -27,6 +28,9 @@ type: application/json
   "sk-SK": "Slovak (Slovakia)",
   "sl-SI": "Solvenian (Slovenia)",
   "sv-SE": "Swedish (Sweden)",
+  "zh-CN": "Chinese (China)",
+  "zh-HK": "Chinese (Hong Kong)",
   "zh-Hans": "Chinese (Simplified)",
-  "zh-Hant": "Chinese (Traditional)"
+  "zh-Hant": "Chinese (Traditional)",
+  "zh-TW": "Chinese (Taiwan)"
 }

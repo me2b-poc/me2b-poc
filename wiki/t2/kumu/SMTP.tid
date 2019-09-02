@@ -1,0 +1,19 @@
+tmap.edges:[]
+tmap.id:df29c3ec-38fe-4fc5-bc91-5c4ce90531e2
+tags:
+icon:
+caption:SMTP
+title:SMTP
+Type:Specification
+Website:https://tools.ietf.org/html/rfc5321
+
+This document is a specification of the basic protocol for Internet
+   electronic mail transport.  It consolidates, updates, and clarifies
+   several previous documents, making all or parts of most of them
+   obsolete.  It covers the SMTP extension mechanisms and best practices
+   for the contemporary Internet, but does not provide details about
+   particular extensions.  Although SMTP was designed as a mail
+   transport and delivery protocol, this specification also contains
+   information that is important to its use as a "mail submission"
+   protocol for "split-UA" (User Agent) mail reading systems and mobile
+   environments.

@@ -1,6 +1,8 @@
 {
     "description": "Full edition, containing all languages, themes and plugins",
     "plugins": [
+        "tiddlywiki/filesystem",
+        "tiddlywiki/tiddlyweb",
         "tiddlywiki/bibtex",
         "tiddlywiki/blog",
         "tiddlywiki/browser-sniff",
