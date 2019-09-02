@@ -217,7 +217,10 @@ export class SimpleKumuElementType extends SimpleKumuType implements KumuElement
 	parent?:KumuElementType
 	constructor(type:string,model:KumuModel) {
 		super(type,model)
-		this.parent = undefined
+		if(this.depth>1) {
+			const parentType = this.parts.slice(0,this.depth-1).join("/")
+			this.parent = this.model.encounterElementType(parentType);
+		}
 	}
 }
 export class SimpleKumuConnectionType extends SimpleKumuType implements KumuConnectionType {
@@ -279,11 +282,6 @@ export class KumuModel
 	}
 
 	encounterConnectionType(type:string):KumuConnectionType
-	{
-		const result = this._encounterConnectionType(type)
-		return result
-	}
-	_encounterConnectionType(type:string):KumuConnectionType
 	{
 		if(!type)
 			return this.defaultConnectionType

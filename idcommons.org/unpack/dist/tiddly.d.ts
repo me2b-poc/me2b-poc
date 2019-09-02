@@ -37,6 +37,7 @@ export interface TiddlerFileBase {
     templates: string;
     createNodeTiddler: (data: TiddlerData) => NodeTiddler;
     createEdgeTypeTiddler: (parts: string[]) => EdgeTypeTiddler;
+    createNodeTypeTiddler: (parts: string[]) => NodeTypeTiddler;
     ensurePath: (base: string, dir?: string) => string;
 }
 export interface NodeTiddler extends TiddlyElement, Tiddler {
@@ -73,14 +74,27 @@ export declare class SimpleNodeTiddler extends SimpleTiddler implements NodeTidd
     tiddlerdata(): string;
 }
 export declare class NodeTypeTiddler extends SimpleTiddler {
-    constructor(data: TiddlerData, base: TiddlerFileBase);
+    parts: string[];
+    slugchain: string[];
+    filepart: string;
+    dirchain?: string[];
+    scope: string;
+    style: string;
+    constructor(parts: string[], base: TiddlerFileBase);
+    tiddlerdata(): string;
+    randomRGBA(): string;
+    tiddlerdir(): string;
+    tiddlerfile(): string;
 }
 export declare class EdgeTypeTiddler extends SimpleTiddler {
     parts: string[];
     slugchain: string[];
     filepart: string;
     dirchain?: string[];
+    style: string;
     constructor(parts: string[], base: TiddlerFileBase);
+    tiddlerdata(): string;
+    randomRGBA(): string;
     tiddlerdir(): string;
     tiddlerfile(): string;
 }
@@ -118,5 +132,6 @@ export declare class SimpleTiddlerFileBase implements TiddlerFileBase {
     constructor(path: string);
     createNodeTiddler(data: TiddlerData): NodeTiddler;
     createEdgeTypeTiddler(parts: string[]): EdgeTypeTiddler;
+    createNodeTypeTiddler(parts: string[]): NodeTypeTiddler;
 }
 export declare function tiddlyloader(dir: string): TiddlerFileBase;

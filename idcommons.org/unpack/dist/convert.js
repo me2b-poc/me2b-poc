@@ -66,6 +66,10 @@ function createEdgeTypeTiddlerFromConnectionType(type, ctx) {
     var result = ctx.tiddly.createEdgeTypeTiddler(type.parts);
     return result;
 }
+function createNodeTypeTiddlerFromElementType(type, ctx) {
+    var result = ctx.tiddly.createNodeTypeTiddler(type.parts);
+    return result;
+}
 function writeMap(map, ctx) {
     return __awaiter(this, void 0, void 0, function () {
         var files;
@@ -96,22 +100,23 @@ function writeMap(map, ctx) {
 }
 function convert(eltfile, connfile, filebase) {
     return __awaiter(this, void 0, void 0, function () {
-        var model, tiddly, ctx, map, map2, map3, nodes, slug, tiddler, edgeTypes, slug, tiddler, _i, nodes_1, node, dir, path, data, _a, edgeTypes_1, type, dir, path, data;
-        return __generator(this, function (_b) {
-            switch (_b.label) {
+        var model, tiddly, ctx, map, map2, map3, mapmap, nodes, slug, tiddler, elt, tname, edgeTypes, slug, tiddler, nodeTypes, slug, tiddler, _i, nodes_1, node, dir, path, data, _a, edgeTypes_1, type, dir, path, data, _b, nodeTypes_1, type, dir, path, data, _c, _d, _e, x;
+        return __generator(this, function (_f) {
+            switch (_f.label) {
                 case 0:
                     console.log("Load Kumu");
                     return [4 /*yield*/, kumu_1.kumuloader(eltfile, connfile)];
                 case 1:
-                    model = _b.sent();
+                    model = _f.sent();
                     console.log("Load Tiddly");
                     return [4 /*yield*/, tiddly_1.tiddlyloader(filebase)];
                 case 2:
-                    tiddly = _b.sent();
+                    tiddly = _f.sent();
                     ctx = { model: model, tiddly: tiddly };
                     map = new tiddly_2.SimpleTiddlyMap("Everything");
                     map2 = new tiddly_2.SimpleTiddlyMap("Nothing");
                     map3 = new tiddly_2.SimpleTiddlyMap("Something");
+                    mapmap = new Map();
                     console.log("Convert Kumu Elements -> Tiddlers");
                     nodes = [];
                     for (slug in model.elements) {
@@ -120,6 +125,11 @@ function convert(eltfile, connfile, filebase) {
                         map.nodes.add(tiddler.tmap_id);
                         if (tiddler.tmap_id[4] == '3')
                             map3.nodes.add(tiddler.tmap_id);
+                        elt = model.elements[slug];
+                        tname = elt.type.name;
+                        if (!mapmap[tname])
+                            mapmap[tname] = new tiddly_2.SimpleTiddlyMap(tname);
+                        mapmap[tname].nodes.add(tiddler.tmap_id);
                     }
                     console.log("Convert Kumu Connection Types -> Edge Type Tiddlers");
                     edgeTypes = [];
@@ -127,9 +137,15 @@ function convert(eltfile, connfile, filebase) {
                         tiddler = createEdgeTypeTiddlerFromConnectionType(model.connectionTypes[slug], ctx);
                         edgeTypes.push(tiddler);
                     }
+                    console.log("Convert Kumu Element Types -> Node Type Tiddlers");
+                    nodeTypes = [];
+                    for (slug in model.elementTypes) {
+                        tiddler = createNodeTypeTiddlerFromElementType(model.elementTypes[slug], ctx);
+                        nodeTypes.push(tiddler);
+                    }
                     console.log("Writing Tiddlers");
                     _i = 0, nodes_1 = nodes;
-                    _b.label = 3;
+                    _f.label = 3;
                 case 3:
                     if (!(_i < nodes_1.length)) return [3 /*break*/, 7];
                     node = nodes_1[_i];
@@ -138,19 +154,19 @@ function convert(eltfile, connfile, filebase) {
                     data = node.tiddlerdata();
                     return [4 /*yield*/, tiddly.ensurePath(dir)];
                 case 4:
-                    _b.sent();
+                    _f.sent();
                     console.log("Writing Tiddler:", path);
                     return [4 /*yield*/, fs_extra_1.default.writeFile(path, data)];
                 case 5:
-                    _b.sent();
-                    _b.label = 6;
+                    _f.sent();
+                    _f.label = 6;
                 case 6:
                     _i++;
                     return [3 /*break*/, 3];
                 case 7:
                     console.log("Writing Edge Types");
                     _a = 0, edgeTypes_1 = edgeTypes;
-                    _b.label = 8;
+                    _f.label = 8;
                 case 8:
                     if (!(_a < edgeTypes_1.length)) return [3 /*break*/, 12];
                     type = edgeTypes_1[_a];
@@ -159,25 +175,61 @@ function convert(eltfile, connfile, filebase) {
                     data = type.tiddlerdata();
                     return [4 /*yield*/, tiddly.ensurePath(dir)];
                 case 9:
-                    _b.sent();
-                    console.log("Writing Edge Types:", path);
+                    _f.sent();
+                    console.log("Writing Edge Type:", path);
                     return [4 /*yield*/, fs_extra_1.default.writeFile(path, data)];
                 case 10:
-                    _b.sent();
-                    _b.label = 11;
+                    _f.sent();
+                    _f.label = 11;
                 case 11:
                     _a++;
                     return [3 /*break*/, 8];
-                case 12: return [4 /*yield*/, writeMap(map, ctx)];
+                case 12:
+                    console.log("Writing Node Types");
+                    _b = 0, nodeTypes_1 = nodeTypes;
+                    _f.label = 13;
                 case 13:
-                    _b.sent();
-                    return [4 /*yield*/, writeMap(map2, ctx)];
+                    if (!(_b < nodeTypes_1.length)) return [3 /*break*/, 17];
+                    type = nodeTypes_1[_b];
+                    dir = type.tiddlerdir();
+                    path = type.tiddlerfile();
+                    data = type.tiddlerdata();
+                    return [4 /*yield*/, tiddly.ensurePath(dir)];
                 case 14:
-                    _b.sent();
-                    return [4 /*yield*/, writeMap(map3, ctx)];
+                    _f.sent();
+                    console.log("Writing Node Type:", path);
+                    return [4 /*yield*/, fs_extra_1.default.writeFile(path, data)];
                 case 15:
-                    _b.sent();
-                    return [2 /*return*/];
+                    _f.sent();
+                    _f.label = 16;
+                case 16:
+                    _b++;
+                    return [3 /*break*/, 13];
+                case 17: return [4 /*yield*/, writeMap(map, ctx)];
+                case 18:
+                    _f.sent();
+                    return [4 /*yield*/, writeMap(map2, ctx)];
+                case 19:
+                    _f.sent();
+                    return [4 /*yield*/, writeMap(map3, ctx)];
+                case 20:
+                    _f.sent();
+                    _c = [];
+                    for (_d in mapmap)
+                        _c.push(_d);
+                    _e = 0;
+                    _f.label = 21;
+                case 21:
+                    if (!(_e < _c.length)) return [3 /*break*/, 24];
+                    x = _c[_e];
+                    return [4 /*yield*/, writeMap(mapmap[x], ctx)];
+                case 22:
+                    _f.sent();
+                    _f.label = 23;
+                case 23:
+                    _e++;
+                    return [3 /*break*/, 21];
+                case 24: return [2 /*return*/];
             }
         });
     });

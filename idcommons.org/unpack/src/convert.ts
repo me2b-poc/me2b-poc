@@ -6,8 +6,8 @@ import { tiddlyloader } from './tiddly'
 import { KumuModel,KumuElement } from './kumu'
 import { TiddlerFileBase,NodeTiddler } from './tiddly'
 
-import { KumuConnectionType } from './kumu'
-import { EdgeTypeTiddler } from './tiddly'
+import { KumuConnectionType,KumuElementType } from './kumu'
+import { EdgeTypeTiddler,NodeTypeTiddler } from './tiddly'
 
 import { TiddlyMap,SimpleTiddlyMap,TiddlerViewFiles } from './tiddly'
 
@@ -46,6 +46,11 @@ function createEdgeTypeTiddlerFromConnectionType(type:KumuConnectionType,ctx:Con
 	const result = ctx.tiddly.createEdgeTypeTiddler(type.parts)
 	return result
 }
+function createNodeTypeTiddlerFromElementType(type:KumuElementType,ctx:Context):NodeTypeTiddler
+{
+	const result = ctx.tiddly.createNodeTypeTiddler(type.parts)
+	return result
+}
 
 async function writeMap(map:TiddlyMap,ctx:Context) {
 	const files = new TiddlerViewFiles(map,ctx.tiddly)
@@ -78,6 +83,8 @@ async function convert(eltfile:string,connfile:string,filebase:string) {
 	const map2 = new SimpleTiddlyMap("Nothing")
 	const map3 = new SimpleTiddlyMap("Something")
 
+	const mapmap = new Map<string,SimpleTiddlyMap>()
+
 	console.log("Convert Kumu Elements -> Tiddlers");
 	const nodes:NodeTiddler[] = []
 	for(let slug in model.elements) {
@@ -86,6 +93,12 @@ async function convert(eltfile:string,connfile:string,filebase:string) {
 		map.nodes.add(tiddler.tmap_id)
 		if(tiddler.tmap_id[4]=='3')
 			map3.nodes.add(tiddler.tmap_id)
+
+		const elt = model.elements[slug]
+		const tname = elt.type.name
+		if(!mapmap[tname])
+			mapmap[tname] = new SimpleTiddlyMap(tname)
+		mapmap[tname].nodes.add(tiddler.tmap_id)
 	}
 
 	console.log("Convert Kumu Connection Types -> Edge Type Tiddlers");
@@ -93,6 +106,13 @@ async function convert(eltfile:string,connfile:string,filebase:string) {
 	for(let slug in model.connectionTypes) {
 		const tiddler = createEdgeTypeTiddlerFromConnectionType(model.connectionTypes[slug],ctx)
 		edgeTypes.push(tiddler)
+	}
+
+	console.log("Convert Kumu Element Types -> Node Type Tiddlers");
+	const nodeTypes:NodeTypeTiddler[] = []
+	for(let slug in model.elementTypes) {
+		const tiddler = createNodeTypeTiddlerFromElementType(model.elementTypes[slug],ctx)
+		nodeTypes.push(tiddler)
 	}
 
 	console.log("Writing Tiddlers");
@@ -111,14 +131,25 @@ async function convert(eltfile:string,connfile:string,filebase:string) {
 		const path = type.tiddlerfile()
 		const data = type.tiddlerdata()
 		await tiddly.ensurePath(dir)
-		console.log("Writing Edge Types:",path)
+		console.log("Writing Edge Type:",path)
+		await fs.writeFile(path,data)
+	}
+
+	console.log("Writing Node Types");
+	for(let type of nodeTypes) {
+		const dir = type.tiddlerdir()
+		const path = type.tiddlerfile()
+		const data = type.tiddlerdata()
+		await tiddly.ensurePath(dir)
+		console.log("Writing Node Type:",path)
 		await fs.writeFile(path,data)
 	}
 
 	await writeMap(map,ctx)
 	await writeMap(map2,ctx)
 	await writeMap(map3,ctx)
-
+	for(let x in mapmap)
+		await writeMap(mapmap[x],ctx)
 }
 
 export = (args:string[]) => {

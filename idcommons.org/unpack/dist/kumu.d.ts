@@ -115,6 +115,5 @@ export declare class KumuModel {
     locateElementByLabel(label: string): KumuElement;
     encounterElementType(type: string): KumuElementType;
     encounterConnectionType(type: string): KumuConnectionType;
-    _encounterConnectionType(type: string): KumuConnectionType;
 }
 export declare function kumuloader(eltfile: string, connfile: string): Promise<KumuModel>;
